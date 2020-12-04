@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		p{
+			font-family:courier;
+			font-size:50px;
+		}
+
+		#blank{
+			font-family:courier;
+			font-size:50px;
+			border:1px dotted black;
+			width:600px;
+			height:200px;
+			color:orange;
+		}
+	</style>
+</head>
+<body>
+<p>Dear Mom, <br>
+
+Down below are going to be all the reasons I am so lucky to have you,
+<br>
+Happy Thanksgiving and <br>
+Click the white box...</p>
+
+
+<div id="blank"></div>
+ <p>
+</p>
+
+<script type="text/javascript">
+	
+	var array = [
+	"Out of a billion people I am so luck to have you",
+	"I can't imagine my life without you",
+	"Thank you for everything you have done for me",
+	"Love you so much",
+	
+
+	]
+
+	var box = document.getElementById("blank");
+	box.addEventListener("click",
+function() {
+var x = Math.round(Math.random()*6)
+	box.innerText = array[x];
+
+}
+		);
+
+
+</script>
+
+
+</body>
+</html>

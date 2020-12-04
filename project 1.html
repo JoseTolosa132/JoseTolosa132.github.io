@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    .ladybug {
+        width: 50px;
+        border-radius: 50%;
+        height: 50px;
+        background-image: url(https://www.freepnglogos.com/uploads/frog-png/download-frog-png-image-png-image-pngimg-19.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        /*left:100px;
+			top:100px;*/
+        position: absolute;
+    }
+
+    body{
+    	margin:0px;
+    	background-size:cover;
+    	background-image:url(https://www.telegraph.co.uk/content/dam/Travel/2018/September/El-Yunque-morning-mist-iStock-535499464.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    </style>
+</head>
+
+<body>
+<!--     <div class="ladybug"></div>
+ -->    <script type="text/javascript">
+    console.log();
+
+    document.addEventListener("click", function(event) {
+        console.log(event.clientX, event.clientY);
+
+        var circle = document.createElement("div");
+
+        document.body.appendChild(circle);
+        circle.classList.add('ladybug');
+
+        circle.style.left = event.clientX - 25 + "px";
+
+        circle.style.top = event.clientY - 25 + "px";
+
+
+
+    })
+    </script>
+     <embed name="Pr" src="/music/Pr.mp3" loop="false" hidden="true" autostart="true">
+</body>
+
+
+
+</html>
